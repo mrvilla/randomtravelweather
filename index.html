@@ -2,33 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Travel Weather</title>
+    <link rel="stylesheet" href="assets/css/weather-icons.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+    <script type="text/javascript" src="assets/js/jq.min.js"></script>
 </head>
 <body>
     <article class="article">
         <header class="header">
-            <h2>Random Travel Weather</h2>
-        </header>
-        <section class="section">
-            <form>
-                <input type="search" value="Search" placeholder="Search"/>
+            <h2 class="title">Random Travel Weather</h2>
+            <form class="search_form">
+                <input type="search" value="Search city or country" placeholder="Search city or country"/>
             </form>
-            
-        </section>
+        </header>
+        <div class="section">
+            <div class="searched_city">
+                <div class="city">Berlin, DE</div> 
+                <i class="wi wi-day-sunny"></i>
+                <div class="temperature">0.5 °C</div>
+            </div>
+            <div class="weather_container">
+                <div class="weather_details">
+                    <div class="city">Paris, FR</div>
+                    <i class="wi wi-day-sprinkle"></i>
+                    <div class="temperature">4.8 °C</div>
+                </div>
+                <div class="weather_details">
+                    <div class="city">London, GB</div> 
+                    <i class="wi wi-fog"></i>
+                    <div class="temperature">7.7 °C</div>
+                </div>
+                <div class="weather_details">
+                    <div class="city">Madrid, ES</div>
+                    <i class="wi wi-day-rain-mix"></i>
+                    <div class="temperature">7 °C</div>
+                </div>
+            </div>
+         </div>
         <footer class="footer">
-            <p>&copy; Copyright 2016</p>
+            <p>&copy; 2016</p>
         </footer>
     </article>
-   
-	
 </body>
-    <script src="assets/js/jq.min.js"></script>
-    <script src="assets/js/openWeather.js"></script>
-    <script>
-		var api_key = 'a49a791f66b41c7fb7a2162af497d85c';
-        var source = 'api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=html';
-	</script>
+<script type="text/javascript" src="assets/js/openWeather.js"></script>
 </html>

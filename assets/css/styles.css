@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Pontano+Sans');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
 *:after,
 *:before {
   -webkit-box-sizing: border-box;
@@ -12,25 +12,30 @@ html {
 	margin: 0;
 }
 body {
-	font-family: 'Pontano Sans', sans-serif;
-	letter-spacing: 2px;
+	font-family: 'Source Sans Pro', sans-serif;
 	line-height: 1.2;
 	margin: 0;
 	text-rendering: optimizeLegibility;
   	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
-	color: hsla(0, 0%, 30%, 1);
+	color: hsla(0, 0%, 40%, 1);
 	background: hsla(360, 100%, 100%, 1);
 	overflow: hidden;
   	padding: 0;
 }
+h1, h2, h3, h4, h5, h6, p {
+	font-weight: 400;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: .3em;
+}
 input {
+	width: 27vw;
 	padding: .625em;
-	border: solid 1px hsla(0, 0%, 80%, .4);
+	border: solid 1px hsla(0, 0%, 60%, .1);
 	border-radius: 6px;
     transition: all .5s;
-    box-shadow: inset .063em  0 .063em .063em hsla(0, 0%, 80%, .4);
-    color: hsla(0, 0%, 30%, 1);
+    background: transparent;
+    color: hsla(0, 0%, 40%, 1);
 }
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1.250em hsla(0, 100%, 100%, 1) inset;
@@ -52,16 +57,97 @@ input:-webkit-autofill {
   	justify-content: center;
   	height: 100vh;
 }
-.header, .footer, .section {
+.header, .footer {
 	display: flex;
 	flex-direction: row;
 	padding: .625em;
-}
-.header, .footer {
 	background: hsla(0, 0%, 80%, .4);
+}
+.title {
+	flex: 2;	
+}
+.footer {
+	padding: .125em .625em;
 }
 .section {
 	display: flex;
 	flex: 1;
-  	align-self: center;
+  	flex-direction: column;
+  	align-items: center;
+  	padding-top: 3em;
+  	background: hsla(0, 0%, 80%, .4);
+}
+.weather_container, .searched_city {
+	display: flex;
+	width: 48vw;
+	color: hsla(0, 0%, 0%, 1);
+}
+.weather_container {
+	justify-content: space-around;
+}
+.weather_details {
+	text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.searched_city {
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+    padding: 0 0 3em;
+}
+.searched_city .city,
+.searched_city .temperature,
+.searched_city .wi {
+	color: hsla(0, 0%, 30%, 1);
+}
+.searched_city .city {
+	font-weight: bold;
+	font-size: 180%;
+}
+.searched_city .wi {
+	font-size: 450%;
+}
+.searched_city .temperature {
+	letter-spacing: 1px;
+	font-size: 250%;
+	font-weight: bold;
+}
+.city {
+    font-size: 160%;
+    font-weight: 400;
+    padding-bottom: 0.3em;
+	color: hsla(0, 0%, 45%, 1);
+}
+.temperature {
+	letter-spacing: 1px;
+	padding-top: .3em;
+	font-size: 225%;
+	color: hsla(0, 0%, 45%, 1);
+}
+.wi {
+	font-size: 350%;
+    line-height: 1.3;
+    color: hsla(0, 0%, 45%, 1);
+}
+
+@media only screen and (max-width : 768px) { 
+	body, html {
+		font-size: 80%;
+	}
+	input {
+		width: 100vw;
+	}
+	.title {
+		flex: 1;
+	}
+	.header, .footer {
+		flex-direction: column;
+		align-items: center;
+	}
+	.weather_container, .searched_city {
+		width: 90vw;
+	}	
+	
 }
