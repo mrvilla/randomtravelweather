@@ -9,41 +9,39 @@
     <script type="text/javascript" src="assets/js/jq.min.js"></script>
 </head>
 <body>
-    <article class="article">
-        <header class="header">
-            <h2 class="title">Random Travel Weather</h2>
-            <form class="search_form">
-                <input type="search" value="Search city or country" placeholder="Search city or country"/>
-            </form>
-        </header>
-        <div class="section">
-            <div class="searched_city">
-                <div class="city">Berlin, DE</div> 
-                <i class="wi wi-day-sunny"></i>
-                <div class="temperature">0.5 °C</div>
+    <header class="header">
+        <h2 class="title">Random Travel Weather</h2>
+        <form class="search_form">
+            <input type="search" value="Search city or country" placeholder="Search city or country"/>
+        </form>
+    </header>
+    <div class="article">
+        <div class="searched_city">
+            <div class="city">Berlin, DE</div> 
+            <i class="wi wi-day-sunny"></i>
+            <div class="temperature">0.5 °C</div>
+        </div>
+        <div class="weather_container">
+            <div class="weather_details">
+                <div class="city">Paris, FR</div>
+                <i class="wi wi-day-sprinkle"></i>
+                <div class="temperature">4.8 °C</div>
             </div>
-            <div class="weather_container">
-                <div class="weather_details">
-                    <div class="city">Paris, FR</div>
-                    <i class="wi wi-day-sprinkle"></i>
-                    <div class="temperature">4.8 °C</div>
-                </div>
-                <div class="weather_details">
-                    <div class="city">London, GB</div> 
-                    <i class="wi wi-fog"></i>
-                    <div class="temperature">7.7 °C</div>
-                </div>
-                <div class="weather_details">
-                    <div class="city">Madrid, ES</div>
-                    <i class="wi wi-day-rain-mix"></i>
-                    <div class="temperature">7 °C</div>
-                </div>
+            <div class="weather_details">
+                <div class="city">London, GB</div> 
+                <i class="wi wi-fog"></i>
+                <div class="temperature">7.7 °C</div>
             </div>
-         </div>
-        <footer class="footer">
-            <p>&copy; 2016</p>
-        </footer>
-    </article>
+            <div class="weather_details">
+                <div class="city">Madrid, ES</div>
+                <i class="wi wi-day-rain-mix"></i>
+                <div class="temperature">7 °C</div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2016</p>
+    </footer>
 </body>
 <script type="text/javascript" src="assets/js/openWeather.js"></script>
 </html>

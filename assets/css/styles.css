@@ -19,7 +19,7 @@ body {
   	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
 	color: hsla(0, 0%, 40%, 1);
-	background: hsla(360, 100%, 100%, 1);
+	background: hsla(0, 0%, 80%, .4);
 	overflow: hidden;
   	padding: 0;
 }
@@ -55,27 +55,19 @@ input:-webkit-autofill {
 	display: flex;
   	flex-direction: column;
   	justify-content: center;
-  	height: 100vh;
+  	align-items: center;
+  	height: 90vh;
 }
 .header, .footer {
 	display: flex;
 	flex-direction: row;
 	padding: .625em;
-	background: hsla(0, 0%, 80%, .4);
 }
 .title {
 	flex: 2;	
 }
 .footer {
 	padding: .125em .625em;
-}
-.section {
-	display: flex;
-	flex: 1;
-  	flex-direction: column;
-  	align-items: center;
-  	padding-top: 5em;
-  	background: hsla(0, 0%, 80%, .4);
 }
 .weather_container, .searched_city {
 	display: flex;
@@ -136,8 +128,12 @@ input:-webkit-autofill {
 	body, html {
 		font-size: 80%;
 	}
+	body {
+		overflow: visible;
+	}
 	input {
-		width: 100vw;
+		width: 85vw;
+    	margin-top: .6em;
 	}
 	.title {
 		flex: 1;
@@ -148,6 +144,5 @@ input:-webkit-autofill {
 	}
 	.weather_container, .searched_city {
 		width: 90vw;
-	}	
-	
+	}
 }
