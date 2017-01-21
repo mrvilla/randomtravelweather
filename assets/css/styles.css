@@ -25,6 +25,7 @@ body {
 }
 h1, h2, h3, h4, h5, h6, p {
 	font-weight: 400;
+	margin: 0;
     -webkit-margin-before: 0;
     -webkit-margin-after: .3em;
 }
@@ -74,6 +75,11 @@ input:-webkit-autofill {
 	width: 48vw;
 	color: hsla(0, 0%, 0%, 1);
 }
+.city_ct {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
 .weather_container {
 	justify-content: space-around;
 }
@@ -90,11 +96,13 @@ input:-webkit-autofill {
     padding: 0 0 6em;
 }
 .searched_city .city,
+.searched_city .country,
 .searched_city .temperature,
 .searched_city .wi {
 	color: hsla(0, 0%, 30%, 1);
 }
-.searched_city .city {
+.searched_city .city,
+.searched_city .country {
 	font-weight: bold;
 	font-size: 180%;
 }
@@ -106,7 +114,7 @@ input:-webkit-autofill {
 	font-size: 250%;
 	font-weight: bold;
 }
-.city {
+.city, .country {
     font-size: 160%;
     font-weight: 400;
     padding-bottom: 0.3em;
@@ -123,6 +131,7 @@ input:-webkit-autofill {
     line-height: 1.3;
     color: hsla(0, 0%, 45%, 1);
 }
+
 
 @media only screen and (max-width : 768px) { 
 	body, html {

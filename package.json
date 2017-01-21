@@ -1,0 +1,15 @@
+{
+  "name": "random_travel_weather",
+  "version": "0.0.2",
+  "description": "Building A Random Travel Weather",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrvilla/randomtravelweather.git"
+  },
+  "author": "Henry Villa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrvilla/randomtravelweather/issues"
+  },
+  "homepage": "https://github.com/mrvilla/randomtravelweather#readme"
+}
